@@ -9,7 +9,7 @@ function Node({ data, selected }) {
   return (
     <>
       <NodeResizer minWidth={250} minHeight={100} isVisible={!!selected} />
-      <Handle type="target" position={Position.Top} />
+      <Handle style={{ width: "15px", height: "15px" }} type="target" position={Position.Top} />
       <div className="border-2 flex p-4 rounded-md shadow-md flex-col gap-2 h-full items-center min-w-[250px] min-h-[100px] bg-secondary">
         <h2 className="font-semibold ">{name}</h2>
         <p>
@@ -25,7 +25,7 @@ function Node({ data, selected }) {
           </ViewCardDetailsModal>
         )}
       </div>
-      <Handle type="source" position={Position.Bottom} id="a" />
+      <Handle style={{ width: "15px", height: "15px" }} type="source" position={Position.Bottom} id="a" />
     </>
   );
 }
