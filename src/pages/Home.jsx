@@ -16,7 +16,7 @@ const onDragOver = (event) => {
   event.dataTransfer.dropEffect = "move";
 };
 
-let id = 0;
+let id = 3;
 const getId = () => `dndnode_${id++}`;
 const nodeOrigin = [0.5, 0.5];
 const nodeTypes = { card: Node };
