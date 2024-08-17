@@ -2,7 +2,7 @@ const onDragStart = (event) => {
   event.dataTransfer.effectAllowed = "move";
 };
 
-const SideBar = () => {
+const Sidebar = () => {
   return (
     <aside className="fixed top-0 right-0 h-full shadow-xl p-4 flex flex-col gap-3 bg-secondary">
       <h1 className="font-bold text-xl">Drag and Drop to create a card</h1>
@@ -17,4 +17,4 @@ const SideBar = () => {
   );
 };
 
-export default SideBar;
+export default Sidebar;
